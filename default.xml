@@ -13,8 +13,8 @@
   </project>
   <project path="build/bazel_common_rules" name="platform/build/bazel_common_rules" groups="ddk" />
   <project path="common" name="kernel/common" revision="android15-6.6-2024-12" upstream="android15-6.6-2024-12" dest-branch="android15-6.6-2024-12" />
-  <project path="kernel/configs" name="kernel/configs" revision="ddaf23a2e9d1b688cca97d268b44d5b2081d6488" upstream="main" dest-branch="main" />
-  <project path="kernel/tests" name="kernel/tests" revision="3424808d677354afae2870713ec1399947feb0b8" upstream="main" dest-branch="main">
+  <project path="kernel/configs" name="kernel/configs" revision="76dd129942d2d1a1ccaa3ea0effa682e9e1828ac" upstream="main" dest-branch="main" />
+  <project path="kernel/tests" name="kernel/tests" revision="6389b876d70463e902559b2f79cd2616b3cc37b7" upstream="main" dest-branch="main">
     <linkfile src="tools/run_test_only.sh" dest="run_test_only.sh" />
     <linkfile src="tools/launch_cvd.sh" dest="launch_cvd.sh" />
     <linkfile src="tools/flash_device.sh" dest="flash_device.sh" />
@@ -28,8 +28,8 @@
   <project path="prebuilts/clang-tools" name="platform/prebuilts/clang-tools" clone-depth="1" />
   <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" groups="ddk" />
   <project path="prebuilts/rust" name="platform/prebuilts/rust" clone-depth="1" />
-  <project path="prebuilts/tradefed" name="platform/tools/tradefederation/prebuilts" revision="c715ad89de7d74a359006838eabe593df1d9379e" clone-depth="1" upstream="main" dest-branch="main" />
-  <project path="prebuilts/asuite" name="platform/prebuilts/asuite" revision="81407ec1402b49ea07587217f7fd9bdc243519f3" clone-depth="1" upstream="main" dest-branch="main" />
+  <project path="prebuilts/tradefed" name="platform/tools/tradefederation/prebuilts" revision="77fa04f24cb7161ca3f1874aa9b5c75a0e8d0334" clone-depth="1" upstream="main" dest-branch="main" />
+  <project path="prebuilts/asuite" name="platform/prebuilts/asuite" revision="d1d442009e9e135656d61f0514a71c0246ae3449" clone-depth="1" upstream="main" dest-branch="main" />
   <project path="tools/mkbootimg" name="platform/system/tools/mkbootimg" />
 
   <project path="prebuilts/jdk/jdk11" name="platform/prebuilts/jdk/jdk11" clone-depth="1" />
