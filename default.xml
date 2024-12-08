@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="aosp" fetch=".." review="https://android-review.googlesource.com/" />
+  <remote name="aosp" fetch="https://android.googlesource.com/" review="https://android-review.googlesource.com/" />
+  <remote name="mayuri" fetch="https://github.com/Mayuri-Chan/" revision="main" />
   <default revision="main-kernel-build-2024" remote="aosp" sync-j="4" />
 
   <superproject name="kernel/superproject" remote="aosp" revision="common-android15-6.6-2024-12" />
@@ -12,7 +13,7 @@
     <linkfile src="kleaf/bzlmod/bazel.WORKSPACE.bzlmod" dest="WORKSPACE.bzlmod" />
   </project>
   <project path="build/bazel_common_rules" name="platform/build/bazel_common_rules" groups="ddk" />
-  <project path="common" name="kernel/common" revision="android15-6.6-2024-12" upstream="android15-6.6-2024-12" dest-branch="android15-6.6-2024-12" />
+  <project path="common" name="android15-6.6" revision="main" upstream="main" dest-branch="main" remote="mayuri" />
   <project path="kernel/configs" name="kernel/configs" revision="76dd129942d2d1a1ccaa3ea0effa682e9e1828ac" upstream="main" dest-branch="main" />
   <project path="kernel/tests" name="kernel/tests" revision="6389b876d70463e902559b2f79cd2616b3cc37b7" upstream="main" dest-branch="main">
     <linkfile src="tools/run_test_only.sh" dest="run_test_only.sh" />
